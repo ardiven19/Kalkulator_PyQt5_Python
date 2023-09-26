@@ -1,7 +1,6 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
-from PyQt5.QtWidgets import QMenuBar
 class mainform(QWidget):
 
 
@@ -18,7 +17,7 @@ class mainform(QWidget):
         self.resize(self.lebar, self.tinggi)
         self.move(100, 100)
         self.setWindowTitle('kalkulator')
-        self.setWindowIcon(QIcon('E:/Aplikasi/ICCon/LOGO/black-spider.ico'))
+        self.setWindowIcon(QIcon('calculator.png'))
         self.setStyleSheet("background-color: indigo; font-size: 30px; font-family: 'Times New Roman', Times, serif;")
 
         self.tampilan = QLineEdit()
