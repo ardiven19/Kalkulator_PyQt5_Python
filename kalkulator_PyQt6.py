@@ -135,10 +135,14 @@ class mainform(QWidget):
             self.hitung.append(value)
             self.updateTampilan()
     def trigonometri(self, value):
-
-        self.tampilan_list.append(value+'(')
-        self.hitung.append('math.'+value+'(')
-        self.updateTampilan()
+        if value == 'log':
+            self.tampilan_list.append('10'+value + '(')
+            self.hitung.append('math.' + value + '10(')
+            self.updateTampilan()
+        else:
+            self.tampilan_list.append(value+'(')
+            self.hitung.append('math.'+value+'(')
+            self.updateTampilan()
 
 
 
